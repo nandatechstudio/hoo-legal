@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoʻo App — Legal & Privacy</title>
+    <style>
+        :root {
+            --primary: #94A3B8;
+            --background: #F8FAFC;
+            --surface: #FFFFFF;
+            --text: #334155;
+            --heading: #0F172A;
+            --accent: #E2E8F0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--surface);
+            border-bottom: 1px solid var(--accent);
+            padding: 2rem 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        h1 {
+            color: var(--heading);
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: var(--primary);
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .tab {
+            padding: 0.75rem 1.5rem;
+            background-color: var(--surface);
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text);
+            transition: all 0.2s ease;
+        }
+
+        .tab:hover {
+            background-color: var(--accent);
+        }
+
+        .tab.active {
+            background-color: var(--heading);
+            color: white;
+            border-color: var(--heading);
+        }
+
+        .content-section {
+            display: none;
+            background-color: var(--surface);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--accent);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--heading);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--heading);
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        p, ul {
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .quote {
+            font-style: italic;
+            font-weight: 600;
+            color: var(--heading);
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hoʻo App</h1>
+        <div class="subtitle">Ho'oponopono Prayer & Healing</div>
+    </header>
+
+    <div class="container">
+        <div class="tab-container">
+            <button class="tab active" onclick="switchTab('terms')">Terms & Conditions</button>
+            <button class="tab" onclick="switchTab('privacy')">Privacy Policy</button>
+        </div>
+
+        <!-- Terms & Conditions Section -->
+        <div id="terms" class="content-section active">
+            <h2>Terms & Conditions</h2>
+            <p><strong>Effective Date:</strong> June 30, 2026</p>
+
+            <h3>1. Acceptance of Terms</h3>
+            <p>By downloading, installing, or using Hoʻo ("the App"), you agree to be bound by these Terms & Conditions. If you do not agree to these terms, please do not use the App.</p>
+
+            <h3>2. Description of Service</h3>
+            <p>Hoʻo is a meditation and healing application centered around the Ho'oponopono practice, offering guided sessions, background music, voice guidance, intention setting, and practice tracking. The App is intended for personal wellness and spiritual practice purposes and is not a substitute for professional medical, psychological, or psychiatric advice or treatment.</p>
+
+            <h3>3. Eligibility</h3>
+            <p>You must be at least 13 years of age to use Hoʻo. By using the App, you represent that you meet this age requirement.</p>
+
+            <h3>4. Account & Guest Mode</h3>
+            <p>You may use the App as a Guest, in which case practice data is stored locally on your device. You may also sign in using Google Sign-In, in which case your data will sync to our cloud database. You are responsible for maintaining the security of your account credentials.</p>
+
+            <h3>5. Subscriptions and Free Trial</h3>
+            <ul>
+                <li><strong>5.1 Free Trial:</strong> New users who sign in with an account may be eligible for a 3-day free trial of Premium features. The trial automatically activates upon first sign-in and is limited to one trial per account. At the end of the trial period, access to premium features will end unless you subscribe.</li>
+                <li><strong>5.2 Subscription Plans:</strong> Hoʻo offers monthly, 6-month, and 12-month subscription plans, billed through Google Play or the Apple App Store. Prices are displayed in the App and may vary by region.</li>
+                <li><strong>5.3 Auto-Renewal:</strong> Subscriptions automatically renew at the end of each billing period unless cancelled at least 24 hours before the renewal date. You can manage or cancel your subscription at any time through your Google Play or App Store account settings.</li>
+                <li><strong>5.4 Refunds:</strong> Refund requests are handled in accordance with Google Play's and Apple's respective refund policies. We do not directly process refunds for purchases made through these platforms.</li>
+            </ul>
+
+            <h3>6. User Conduct</h3>
+            <p>You agree to use the App only for lawful purposes and in a manner consistent with its intended spiritual and wellness purpose. You agree not to attempt to reverse-engineer, decompile, or interfere with the App's normal operation.</p>
+
+            <h3>7. Intellectual Property</h3>
+            <p>All content within the App, including but not limited to text, audio, visual design, animations, and the Hoʻo name and logo, is the property of the App's developer and is protected by applicable intellectual property laws. The Ho'oponopono prayer itself is a traditional Hawaiian practice and is not claimed as proprietary content.</p>
+
+            <h3>8. Health Disclaimer</h3>
+            <p>Hoʻo is designed to support relaxation, mindfulness, and spiritual practice. It is not intended to diagnose, treat, cure, or prevent any medical or psychological condition. If you are experiencing a mental health crisis, please seek help from a qualified professional or emergency services in your area.</p>
+
+            <h3>9. Limitation of Liability</h3>
+            <p>The App is provided "as is" without warranties of any kind, express or implied. To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.</p>
+
+            <h3>10. Termination</h3>
+            <p>We reserve the right to suspend or terminate your access to the App if you violate these Terms. You may stop using the App and delete your account at any time.</p>
+
+            <h3>11. Changes to These Terms</h3>
+            <p>We may update these Terms from time to time. Continued use of the App after changes are posted constitutes your acceptance of the revised Terms.</p>
+
+            <h3>12. Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with applicable local laws, without regard to conflict of law principles.</p>
+
+            <h3>13. Contact Us</h3>
+            <p>For questions about these Terms & Conditions, please contact us at:<br>
+            <strong>Email:</strong> nandatechstudio@gmail.com</p>
+
+            <div class="quote">"I'm sorry. Please forgive me. Thank you. I love you."</div>
+        </div>
+
+        <!-- Privacy Policy Section -->
+        <div id="privacy" class="content-section">
+            <h2>Privacy Policy</h2>
+            <p><strong>Effective Date:</strong> June 30, 2026</p>
+
+            <h3>1. Introduction</h3>
+            <p>This Privacy Policy explains how Hoʻo ("the App," "we," "us") collects, uses, and protects your information when you use our mobile application. We built Hoʻo as a sacred space for healing practice, and we take your privacy as seriously as we take that intention. By using Hoʻo, you agree to the collection and use of information in accordance with this policy.</p>
+
+            <h3>2. Information We Collect</h3>
+            <ul>
+                <li><strong>2.1 Account Information:</strong> If you choose to sign in with Google, we collect your name, email address, and profile picture as provided by Google Sign-In. You may also use the App as a Guest without creating an account, in which case no personal account information is collected.</li>
+                <li><strong>2.2 Practice Data:</strong> Session history (date, time, duration, count of repetitions), Practice streak data, Intention text you optionally enter before a session, and Emotion check-in selections after a session. Guest mode users have this data stored only locally on their device. Logged-in users have this data synced to our cloud database (Firebase Firestore) so it is available across devices.</li>
+                <li><strong>2.3 Subscription Information:</strong> If you purchase a subscription, payment processing is handled entirely by Google Play Billing or Apple App Store. We do not collect or store your payment card details. We receive only subscription status (active, trial, expired) to determine your access to premium features.</li>
+                <li><strong>2.4 Device & Usage Information:</strong> We may collect standard technical information such as device type, operating system version, and app usage analytics to help us improve the App's performance and stability.</li>
+            </ul>
+
+            <h3>3. How We Use Your Information</h3>
+            <ul>
+                <li>To provide and maintain your practice history and streak across sessions</li>
+                <li>To sync your data across devices if you are signed in</li>
+                <li>To manage your subscription and trial status</li>
+                <li>To send optional daily practice reminders, if enabled by you</li>
+                <li>To improve app performance, fix bugs, and develop new features</li>
+            </ul>
+            <p>We do not sell your personal information to third parties. We do not use your intention text or emotional check-in data for advertising purposes.</p>
+
+            <h3>4. Third-Party Services</h3>
+            <p>Hoʻo uses the following third-party services, each governed by their own privacy policies:</p>
+            <ul>
+                <li><strong>Google Firebase</strong> (Authentication & Firestore database) — for account sign-in and data sync</li>
+                <li><strong>Google Play Billing / Apple App Store</strong> — for subscription payment processing</li>
+                <li><strong>RevenueCat</strong> — for subscription management across platforms</li>
+            </ul>
+            <p>These providers may process limited technical data necessary to deliver their services. We encourage you to review their respective privacy policies for further detail.</p>
+
+            <h3>5. Data Storage and Security</h3>
+            <p>Guest mode data is stored locally on your device only and is not transmitted to our servers, except for anonymous crash/performance diagnostics if enabled. Logged-in user data is stored securely in Firebase Firestore, which employs industry-standard encryption in transit and at rest. While we take reasonable measures to protect your data, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+            <h3>6. Your Rights and Choices</h3>
+            <ul>
+                <li>You may use the App entirely as a Guest without providing any personal account information</li>
+                <li>You may sign out and delete your account data at any time by contacting us</li>
+                <li>You may disable practice reminder notifications in Settings</li>
+                <li>You may request a copy or deletion of your stored data by contacting us at the email below</li>
+            </ul>
+
+            <h3>7. Children's Privacy</h3>
+            <p>Hoʻo is not directed at children under the age of 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can remove it.</p>
+
+            <h3>8. Data Retention</h3>
+            <p>We retain your account and practice data for as long as your account remains active. If you delete your account, we will delete your associated personal data within a reasonable timeframe, except where retention is required for legal or legitimate business purposes.</p>
+
+            <h3>9. Changes to This Policy</h3>
+            <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the App or via the update's effective date shown at the top of this document. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+            <h3>10. Contact Us</h3>
+            <p>If you have questions about this Privacy Policy or your data, please contact us at:<br>
+            <strong>Email:</strong> nandatechstudio@gmail.com</p>
+
+            <div class="quote">"I'm sorry. Please forgive me. Thank you. I love you."</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Hoʻo App. All Rights Reserved.
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            // Remove active classes
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.content-section').forEach(c => c.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding section
+            event.target.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
